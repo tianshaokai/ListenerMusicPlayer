@@ -1,7 +1,7 @@
 package io.hefuyi.listener.mvp.usecase;
 
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import java.io.File;
 

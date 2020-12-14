@@ -4,7 +4,7 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
-import android.support.v7.graphics.Palette;
+import androidx.palette.graphics.Palette;
 import android.text.TextUtils;
 
 import com.bumptech.glide.Glide;

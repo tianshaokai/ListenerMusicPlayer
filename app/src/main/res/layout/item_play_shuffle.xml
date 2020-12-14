@@ -13,7 +13,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:src="@drawable/ic_shuffle_white_36dp"
-        android:tint="?colorAccent"
+        app:tint="?colorAccent"
         android:layout_gravity="center_vertical"
         android:tag="tint_accent_color"/>
 

@@ -3,7 +3,7 @@ package io.hefuyi.listener.mvp.contract;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
-import android.support.v7.graphics.Palette;
+import androidx.palette.graphics.Palette;
 
 import java.io.File;
 
