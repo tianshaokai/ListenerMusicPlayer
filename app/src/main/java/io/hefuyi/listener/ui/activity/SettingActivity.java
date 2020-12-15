@@ -73,4 +73,9 @@ public class SettingActivity extends BaseActivity implements ColorChooserDialog.
         Config.markChanged(this, "light_theme");
         recreate(); // recreation needed to reach the checkboxes in the preferences layout
     }
+
+    @Override
+    public void onColorChooserDismissed(@NonNull ColorChooserDialog dialog) {
+
+    }
 }
