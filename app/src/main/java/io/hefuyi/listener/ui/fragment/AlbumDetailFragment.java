@@ -147,7 +147,7 @@ public class AlbumDetailFragment extends Fragment implements AlbumDetailContract
         super.onViewCreated(view, savedInstanceState);
         ButterKnife.bind(this, view);
 
-        ATE.apply(this, ATEUtil.getATEKey(context));
+        ATE.postApply(getActivity(), ATEUtil.getATEKey(context));
 
         if (getArguments().getBoolean("transition")) {
             albumArt.setTransitionName(getArguments().getString("transition_name"));

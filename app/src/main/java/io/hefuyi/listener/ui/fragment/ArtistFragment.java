@@ -130,7 +130,7 @@ public class ArtistFragment extends Fragment implements ArtistContract.View{
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        ATE.apply(this, ATEUtil.getATEKey(getActivity()));
+        ATE.postApply(getActivity(), ATEUtil.getATEKey(getActivity()));
 
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(mAdapter);

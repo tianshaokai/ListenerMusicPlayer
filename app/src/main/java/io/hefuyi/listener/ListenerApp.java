@@ -136,14 +136,14 @@ public class ListenerApp extends Application {
             ATE.config(this, "light_theme")
                     .activityTheme(R.style.AppThemeLight)
                     .coloredNavigationBar(false)
-                    .usingMaterialDialogs(true)
+//                    .usingMaterialDialogs(true)
                     .commit();
         }
         if (!ATE.config(this, "dark_theme").isConfigured()) {
             ATE.config(this, "dark_theme")
                     .activityTheme(R.style.AppThemeDark)
                     .coloredNavigationBar(false)
-                    .usingMaterialDialogs(true)
+//                    .usingMaterialDialogs(true)
                     .commit();
         }
     }

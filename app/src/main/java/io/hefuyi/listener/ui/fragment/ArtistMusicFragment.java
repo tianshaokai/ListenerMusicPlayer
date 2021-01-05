@@ -86,7 +86,7 @@ public class ArtistMusicFragment extends Fragment implements ArtistSongContract.
         super.onViewCreated(view, savedInstanceState);
         ButterKnife.bind(this, view);
 
-        ATE.apply(this, ATEUtil.getATEKey(getActivity()));
+        ATE.postApply(getActivity(), ATEUtil.getATEKey(getActivity()));
 
         songsRecyclerview.setLayoutManager(new LinearLayoutManager(getActivity()));
         songsRecyclerview.addItemDecoration(new DividerItemDecoration(getActivity(), DividerItemDecoration.VERTICAL_LIST, true));

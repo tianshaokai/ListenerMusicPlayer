@@ -124,7 +124,7 @@ public class SongsFragment extends Fragment implements SongsContract.View {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        ATE.apply(this, ATEUtil.getATEKey(getActivity()));
+        ATE.postApply(getActivity(), ATEUtil.getATEKey(getActivity()));
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(mAdapter);

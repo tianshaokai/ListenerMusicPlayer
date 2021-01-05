@@ -85,7 +85,7 @@ public class PlayRankingFragment extends Fragment implements PlayRankingContract
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        ATE.apply(this, ATEUtil.getATEKey(getActivity()));
+        ATE.postApply(getActivity(), ATEUtil.getATEKey(getActivity()));
 
         if (Build.VERSION.SDK_INT < 21 && view.findViewById(R.id.status_bar) != null) {
             view.findViewById(R.id.status_bar).setVisibility(View.GONE);

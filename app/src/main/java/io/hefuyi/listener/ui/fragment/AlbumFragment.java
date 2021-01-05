@@ -130,7 +130,7 @@ public class AlbumFragment extends Fragment implements AlbumsContract.View{
         super.onViewCreated(view, savedInstanceState);
         ButterKnife.bind(this, view);
 
-        ATE.apply(this, ATEUtil.getATEKey(getActivity()));
+        ATE.postApply(getActivity(), ATEUtil.getATEKey(getActivity()));
 
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(mAdapter);

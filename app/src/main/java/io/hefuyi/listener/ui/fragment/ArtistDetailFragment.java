@@ -120,7 +120,7 @@ public class ArtistDetailFragment extends Fragment implements ArtistDetailContra
         super.onViewCreated(view, savedInstanceState);
         ButterKnife.bind(this, view);
 
-        ATE.apply(this, ATEUtil.getATEKey(getActivity()));
+        ATE.postApply(getActivity(), ATEUtil.getATEKey(getActivity()));
 
         if (getArguments().getBoolean("transition")) {
             artistArt.setTransitionName(getArguments().getString("transition_name"));

@@ -153,7 +153,7 @@ public class PlaylistDetailFragment extends Fragment implements PlaylistDetailCo
         super.onViewCreated(view, savedInstanceState);
         ButterKnife.bind(this, view);
 
-        ATE.apply(this, ATEUtil.getATEKey(getActivity()));
+        ATE.postApply(getActivity(), ATEUtil.getATEKey(getActivity()));
 
         if (getArguments().getBoolean("transition")) {
             playlistArt.setTransitionName(getArguments().getString("transition_name"));

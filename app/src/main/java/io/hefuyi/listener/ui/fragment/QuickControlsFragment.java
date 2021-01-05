@@ -217,7 +217,7 @@ public class QuickControlsFragment extends Fragment implements QuickControlsCont
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        ATE.apply(this, ATEUtil.getATEKey(getActivity()));
+        ATE.postApply(getActivity(), ATEUtil.getATEKey(getActivity()));
 
         mSlidingUpPanelLayout = (SlidingUpPanelLayout) view.getParent().getParent();
 

@@ -39,7 +39,7 @@ public class SettingFragment extends PreferenceFragment implements SharedPrefere
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         invalidateSettings();
-        ATE.apply(view, mAteKey);
+        ATE.postApply(getActivity(), mAteKey);
     }
 
     public void invalidateSettings() {
@@ -50,9 +50,9 @@ public class SettingFragment extends PreferenceFragment implements SharedPrefere
         primaryColorPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override
             public boolean onPreferenceClick(Preference preference) {
-                new ColorChooserDialog.Builder((SettingActivity) getActivity(), R.string.primary_color)
-                        .preselect(Config.primaryColor(getActivity(), mAteKey))
-                        .show();
+//                new ColorChooserDialog.Builder((SettingActivity) getActivity(), R.string.primary_color)
+//                        .preselect(Config.primaryColor(getActivity(), mAteKey))
+//                        .show();
                 return true;
             }
         });
